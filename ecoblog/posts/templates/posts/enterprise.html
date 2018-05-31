@@ -1,0 +1,46 @@
+{% extends 'posts/base2.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<html>
+<img src="{% static "images/Logo JPG Format-2.jpg" %}" height="400" width="95%" alt="My image"/>
+<img class="mb-4" src="{% static "images/rawpixel-603653-unsplash.jpg" %}" height="900" width="100%">
+<head>
+  <div class="container">
+
+
+  <h2>Vamos calcular o valor da sua <strong>empresa?</strong> </h2>
+  <br>
+
+
+
+
+    <body>
+    <p> {{ user.username }}</p>
+      <h1>{{header}}</h1>
+
+
+      {% if form.errors %}
+          <p style="color: red;">
+              Please correct the error{{ form.errors|pluralize }} below.
+          </p>
+      {% endif %}
+
+      <form action="" enctype="multipart/form-data"  method="post">
+          <table>
+              {{ form.as_table }}
+          </table>
+          {% csrf_token %}
+          <input type="submit" value="Submit">
+      </form>
+
+
+  </div>
+  </body>
+  </html>
+
+
+  {% endblock %}

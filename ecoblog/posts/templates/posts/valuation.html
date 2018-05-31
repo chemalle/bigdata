@@ -1,0 +1,60 @@
+{% extends "posts/base2.html" %}
+
+
+{% load staticfiles %}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Economic News</title>
+  </head>
+
+  {% block content %}
+  <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
+  <img src="{% static 'images/sweet-ice-cream-photography-97452-unsplash.jpg' %}" alt="Smiley face" style="float:center;width:250px;height:420px;">
+
+
+  </div>
+
+  <body>
+
+
+<img src="{% static "images/Logo JPG Format-2.jpg" %}" height="400" width="95%" alt="My image"/>
+
+
+<div class="container">
+
+<h2>Abaixo o valuation da empresa <strong>{{company}}</strong> com base nas informacoes basicas desprezando o endividamento e estrategias</h2>
+{% load l10n %}
+{% localize on %}
+
+
+<h3 align='center'>R$ {{ valuation|localize }}</h3>
+
+{% endlocalize %}
+<h4>Os valores que nos foram informados:</h4>
+
+<td class=xl77 style='border-top:none'>{{ df | safe }}</td>
+</div>
+
+
+<br>
+<br>
+<button onclick="goBack()">Retornar para Home Page</button>
+<br/>
+
+
+
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+<br>
+<br>
+  {% endblock %}
+
+</body>
+</html>
