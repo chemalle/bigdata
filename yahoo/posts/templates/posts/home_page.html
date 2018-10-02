@@ -1,0 +1,171 @@
+{% extends "posts/base.html" %}
+
+{% load staticfiles %}
+
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Econobilidade</title>
+
+  </head>
+
+  <body>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{% url 'stocks' %}">Day Trade no seu e-mail!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mynav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'finance' %}">Oportunidades<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'graph' %}">Analise gráfica de ativos</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <form action="/action_page.php" method="get">
+      <input class="form-control mr-sm-2" type="search" placeholder="Digite o ticker da ação" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" formaction="{% url 'stocks' %}">Ticker</button>
+    </form>
+  </div>
+</nav>
+
+<br>
+<br>
+<br>
+
+
+  <h1 align="center">  <strong style="background: gray; padding: 14px; border-radius: 14px; color: blue;"><a href="{% url 'stocks' %}">Smart Invest</strong></a></h1>
+<br>
+<h3 align="center"><a id="blog">Ultimas analises e servicos gratuitos! </a>  </h3>
+
+<div class="container">
+
+
+  <img src="{% static 'images/chris-liverani-552652-unsplash.jpg' %}" height="300"  width="100%" class="img-responsive center-block" alt="unsplash">
+
+</div>
+<hr />
+
+
+<div class="container">
+
+
+  <article class="row">
+       <div class="col-md-7 col-md-push-5">
+
+{% for post in posts|slice:":4" %}
+
+
+
+<h4><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h4>
+
+
+
+<h4> {{ post.pub_date_pretty }}</h4>
+
+
+
+<img src="{{ post.image.url }}"  height="300"   class="img-responsive center-block" />
+
+
+
+
+<h5>{{ post.summary }}</h5>
+
+
+  <hr class="divider">
+
+ </article>
+
+{% endfor %}
+
+
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<div class="block block-inverse app-footer">
+ <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
+          <li class="text-muted">
+             We’ve been working on #econobilidade for the better part of a decade and are super proud of what we’ve created. If you’d like to learn more, or are interested in a job, contact us anytime at <a href="mailto: chemalle@econobilidade.com">chemalle@econobilidade.com</a>.
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2 ml-auto mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">Product</h6></li>
+          <li class="text-muted">Features</li>
+          <li class="text-muted">Examples</li>
+          <li class="text-muted">Tour</li>
+          <li class="text-muted">Gallery</li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">Apis</h6></li>
+          <li class="text-muted">Rich data</li>
+          <li class="text-muted">Simple data</li>
+          <li class="text-muted">Real time</li>
+          <li class="text-muted">Social</li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
+          <li class="text-muted">Terms</li>
+          <li class="text-muted">Legal</li>
+          <li class="text-muted">Privacy</li>
+          <li class="text-muted">License</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/toolkit.js"></script>
+    <script src="js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+</body>
+  {% endblock %}
+</html>

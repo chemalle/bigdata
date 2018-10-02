@@ -1,0 +1,49 @@
+{% extends 'posts/base2.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+
+<a href='{% url "finance" %}'><img src="{% static "images/Logo JPG Format-2.jpg" %}" height="400" width="100%" alt="My image"/></a>
+
+<div class="container">
+
+
+<img class="mb-4" src="{% static "images/andre-benz-710909-unsplash.jpg" %}" height="400" width="100%">
+
+</div>
+
+    <meta charset="utf-8">
+
+    <div class="container">
+
+
+    <title align='center'>Desculpe</title>
+<br>
+<br>
+    <h1> <strong>Desculpe</strong>  </h1>
+
+  </head>
+
+<br>
+<br>
+
+    <h2>Estamos atendendo 300 visitantes do seu segmento neste momento. Recarregue esta página em   <strong> 5 segundos </strong>para obter o seu relatório</h1>
+
+ <br>
+ <br>
+  </div>
+  <body>
+    <td class=xl78 style='border-top:none'>{{df}}</td>
+  </body>
+</html>
+
+
+{% endblock %}

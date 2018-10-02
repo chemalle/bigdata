@@ -1,0 +1,64 @@
+{% extends 'posts/base2.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<html>
+
+
+<head>
+
+<title>Analise de Ativos</title>
+
+<div class='container'>
+<img src="{% static "images/mark-finn-540442-unsplash.jpg" %}" height="300"   width="100%" alt="Stocks">
+
+
+</div>
+<a href="http://finance.econobilidade.com/finance"><img src="{% static "images/Logo JPG Format-2.jpg" %}" height="400" width="95%" alt="My image" /></a>
+
+
+</head>
+  <div class="container">
+
+
+  <h3>Quer maximizar seu investimento em ações? Utilize nossa tecnologia também para seus investimentos pessoais!</h2>
+  <br>
+  <h4>Com o #econobilidade você lucra com base em <strong>algoritmos de inteligência artificial</strong>
+    e tem ganhos superiores na sua empresa e nos seus <strong>investimentos!</strong></h3>
+
+
+
+    <body>
+    <p> {{ user.username }}</p>
+      <h1>{{header}}</h1>
+
+
+      {% if form.errors %}
+          <p style="color: red;">
+              Please correct the error{{ form.errors|pluralize }} below.
+          </p>
+      {% endif %}
+
+      <form action="" enctype="multipart/form-data"  method="post">
+          <table>
+              {{ form.as_table }}
+          </table>
+          {% csrf_token %}
+          <input type="submit" value="Análise no meu e-mail agora!">
+      </form>
+
+
+      <h4>É <strong>gratuito</strong> para a sua análise superficial. Seja <strong>cliente</strong> e receba
+         diversas recomendações em tempo <strong>REAL!</strong></h4>
+
+          </div>
+  </body>
+
+
+  {% endblock %}
+  </html>
+
+

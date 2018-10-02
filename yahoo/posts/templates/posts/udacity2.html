@@ -1,0 +1,102 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Sugerido</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <meta name="udacity-grader" content="http://udacity.github.io/fend/lessons/L5/problem-set/09-div-soup-clean-up/tests.json">
+  </head>
+  <body>
+    <header class="navbar-static-top">
+      <section class="container">
+          <a class="navbar-brand" href="{% url 'finance' %}">ECONOBILIDADE</a>
+          <nav>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://econobilidade.com">About</a></li>
+              <li><a href="https://youtu.be/Q0brUMWilXk">Press</a></li>
+              <li><a href="https://econobilidade.com/contact/">Contact</a></li>
+              <li><a href="http://finance.econobilidade.com/#blog">Blog</a></li>
+            </ul>
+          </nav>
+      </section>
+
+
+    </header>
+
+    <section class="container hero">
+      <div class="hero-image">
+      <img src="{% static "images/rawpixel-594848-unsplash.jpg" %}" width="100%" height="600"></div>
+      <div class="hero-text">
+        <h1 class="headline">O futuro esta aqui!</h1>
+        <p class="teaser">Pronto para transformar a contabilidade num Big Data esmagador da concorrência?</p>
+        <button class="btn btn-primary btn-lg" onclick="location.href = 'http://contabilidade.econobilidade.com';">Entenda melhor aqui!</button>
+      </div>
+
+    </section>
+
+
+    <section class="container">
+      <article class="row">
+        <div class="col-md-7">
+          <h2 class="featured-heading"><span class="text-muted"><a id="target">  A carteira sugerida </a> </span></h2>
+          <p class="lead">Anote os ativos e os preços de entrada ou saída do investimento para maximizar seus retornos e reduzir seus riscos</p>
+
+
+
+<p><strong>Sugestão de alocação de investimentos</strong></p><table style=”90%;”>
+
+  <col style=”width:15%;” />
+<col style=”width:55%;” />
+<col style=”width:30%;” />
+<thead>
+<tr>
+  <th>Ticker</th>
+<th>Preço</th>
+<th>Segmento</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+
+<td>bbse3 - BB Seguridade--   </td>
+<td> A partir de R$ 25,03 --</td>
+<td>Seguros</td>
+</tr>
+<tr>
+
+<td>pcar4 - Grupo Päo de Açúcar</td>
+<td>Acima de R$ 79,78</td>
+<td>Varejo</td>
+</tr>
+
+<td>hype3 - Hypera</td>
+<td>Acima de R$ 27,73</td>
+<td> Medicamentos</td>
+</tr>
+
+
+</tbody>
+
+</table>
+
+<br />
+
+
+
+<br />
+
+
+  </body>
+
+  <footer>
+    <p>&copy; 2018 ECONOBILIDADE &middot; <a href="{% url 'finance' %}">Privacy Policy</a> &middot; <a href="{% url 'finance' %}">Terms &amp; Conditions</a></p>
+  </footer>
+
+</html>

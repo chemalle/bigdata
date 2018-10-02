@@ -1,0 +1,114 @@
+
+{% load staticfiles %}
+<html>
+  <head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <meta charset="utf-8">
+    <title>Economic News</title>
+  </head>
+
+  {% block content %}
+
+  <div class="container">
+
+
+  <img src="{% static 'images/charles-forerunner-378-unsplash.jpg' %}" alt="Smiley face" width='300'  class="img-responsive center-block">
+
+  <!--height="300" width="100%">-->
+
+
+
+
+
+
+
+<a href='{% url "finance" %}'><img src="{% static "images/Logo JPG Format-2.jpg" %}" height="400" width="100%" alt="My image"/></a>
+
+
+
+<hr class="divider">
+<article class="row">
+    <!--<div class="col-md-7 col-md-push-5">-->
+    <div class="col-md-3">
+
+<h3><strong> {{ post.title }}</strong></h3>
+<br/>
+<span>{{ post.pub_date_pretty }}</span>
+<br/>
+
+
+
+<img src="{{ post.image.url }}" width='300'  class="img-responsive center-block" />
+
+
+<br>
+
+<article class="description2">
+<p>{{ post.body }}</p>
+  </article>
+
+</div>
+
+  </article>
+<br/>
+<br>
+
+
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://econobilidade.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<br>
+<br>
+<button onclick="goBack()">Retornar para Home Page</button>
+<br/>
+
+
+
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+<br>
+<br>
+
+  {% endblock %}
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,152 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#econobilidade</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <meta name="udacity-grader" content="http://udacity.github.io/fend/lessons/L5/problem-set/09-div-soup-clean-up/tests.json">
+  </head>
+  <body>
+    <header class="navbar-static-top">
+      <section class="container">
+          <a class="navbar-brand" href="{% url 'finance' %}">ECONOBILIDADE</a>
+          <nav>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://econobilidade.com">About</a></li>
+              <li><a href="https://youtu.be/Q0brUMWilXk">Press</a></li>
+              <li><a href="https://econobilidade.com/contact/">Contact</a></li>
+              <li><a href="http://finance.econobilidade.com/#blog">Blog</a></li>
+              <li><a href="https://finance.econobilidade.com/cash/">Seu Caixa</a></li>
+            </ul>
+          </nav>
+      </section>
+
+
+    </header>
+
+    <section class="container hero">
+      <div class="hero-image">
+      <img src="{% static "images/write.jpg" %}" width="100%" height="600"></div>
+      <div class="hero-text">
+        <h1 class="headline">Conheça seu próximo cliente agora!</h1>
+        <p class="teaser">Os cliques dos seus visitantes, seu relatorio contabil ,</p> <p> sua localizacao geográfica e até o clima podem trazer vendas incríveis!</p>
+        <button class="btn btn-primary btn-lg" onclick="location.href = 'http://contabilidade.econobilidade.com';">Entenda melhor aqui!</button>
+      </div>
+
+    </section>
+
+
+    <section class="container">
+      <article class="row">
+        <div class="col-md-7">
+          <h2 class="featured-heading"><span class="text-muted"></span><a id="target"> O BIG DATA é uma realidade das grandes empresas e agora esta acessivel a todos! </a> </h2>
+          <p class="lead">A Amazon, o Facebook , o UBER e a Apple conhecem mais você do que voçê pode imaginar mas agora isto pode se tornar seu maior ativo também!</p>
+
+          <p>  <a href="http://contabilidade.econobilidade.com">Transforme cada informação em munição <strong> de venda, contrate os melhores profissionais e entenda cada movimento do seu concorrente!</strong></a></p>
+        <p>  <sup>Cobramos pelos resultados gerados, sua empresa vai crescer como nunca e seguir o seu planejamento passo a passo</sup></p>
+        <p>  <a href="http://contabilidade.econobilidade.com/#planos">  <sup> <em> Compare os produtos!</em></sup></a></p>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+          <img class="featured-image img-responsive center-block" src="{% static "images/bridge.svg" %}" alt="bridge">
+        </div>
+      </article>
+      <hr class="divider">
+
+      <article class="row">
+        <div class="col-md-7 col-md-push-5">
+
+          <h2 class="featured-heading">Valuation. <span class="text-muted"><a id="valuation">Descubra quanto vale a sua empresa</span></a></h2>
+
+          <p class="lead">Sabendo o valor da sua empresa voce pode determinar a melhor estrategia de crescimento pois voce define qual a taxa de juros do seu proprio investimento e consegue analisar o que esta dando certo e o que pode melhorar!</p>
+        <p>  <a href="http://finance.econobilidade.com/valuation/">Valuation gratuito agora!</a></p>
+        </div>
+        <div class="col-md-4 col-md-pull-7">
+          <img class="featured-image img-responsive center-block" src="{% static "images/wallet.svg" %}" alt="wallet">
+        </div>
+      </article>
+      <hr class="divider">
+      <article class="row">
+        <div class="col-md-7">
+          <h2 class="featured-heading">Mercado de ações e criptomoedas  <p> <span class="text-muted"><a id="investment">Invista de forma certeira!</span></a></h2></p>
+          <p class="lead">Nosso robô trader analisa as condições de mercado em tempo real e com base na sua escolha de ativos lhe envia automaticamente, por e-mail, uma análise completa de seus ativos preferidos com mais de 80% de assertividade para não clientes e 99% para clientes! Avalie gratuitamente como funciona nossos algoritmos atraves deste <a href="http://finance.econobilidade.com/stocks/">link</a>  e veja o grau de assertividade de nossas recomendações!</p>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+          <img class="featured-image img-responsive center-block" src="{% static "images/book.svg" %}" alt="book">
+        </div>
+      </article>
+      <hr class="divider">
+
+      <article class="row">
+        <div class="col-md-7 col-md-push-5">
+
+          <h2 class="featured-heading"> <strong> Compliance </strong>  <p> <span class="text-muted">Sua empresa precisa de <strong> <span class='description'> auditoria</span></strong></span> <em> para analisar riscos e oportunidades?</em></span></h2></p>
+
+          <p class="lead">Agora você pode auditar suas operacoes em alguns minutos de ponta a ponta, do chão de fábrica até o financeiro e ainda obter um SCORE de risco.</p>
+        <p>  <a href="{% url 'finance2' %}">Veja agora se o seu risco operacional esta compativel com suas premissas de investimento!</a></p>
+        </div>
+        <div class="col-md-4 col-md-pull-7">
+          <img class="featured-image img-responsive center-block" src="{% static "images/razvan-chisu-623946-unsplash.jpg" %}" alt="freedom">
+        </div>
+      </article>
+
+      <hr class="divider">
+      <article class="row">
+        <div class="col-md-7">
+             <a id="mercado">
+          <h2 class="featured-heading">Analise o crescimento do seu segmento agora! <span class="text-muted"><a id="investment">Tire proveito da análise do seu setor e cresça melhor! </span></a></h2>
+          <p class="lead">Nosso algoritmo vai analisar a performance do seu setor de atuação em tempo real e lhe enviar por e-mail, uma visão dinâmica através do faturamento fiscal das empresas do seu segmento. Veja neste <a href="http://finance.econobilidade.com/report/">link</a>  e perceba o quanto a sua contabilidade poderia lhe ajudar muito mais!</p>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <img class="featured-image img-responsive center-block" src="{% static "images/planning.svg" %}" alt="book">
+            <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+        </div>
+      </article>
+
+    <hr class="divider">
+
+      <article class="row">
+        <div class="col-md-7 col-md-push-5">
+            <a id="ebook">
+          <h2 class="featured-heading"> <strong> Plataforma de negócios </strong>  <p> <span class="text-muted">Encontre o melhor  <strong> <span class='description'> profissional</span></strong></span> e ainda determine o quanto quer pagar! <em> </em></span></h2></p>
+
+          <p class="lead"> Nosso algoritmo vai compatibilizar seu orçamento com o melhor profissional</p>
+        <p>  <a href="{% url 'candle' %}">Faça seu cadastro gratuitamente e aproveite para ter os melhores profissionais de cada função financeira ou contábil</a></p>
+        </div>
+        <div class="col-md-4 col-md-pull-7">
+          <img class="featured-image img-responsive center-block" src="{% static "images/candlestick_chart.svg" %}" alt="freedom">
+        </div>
+      </article>
+
+
+     <hr class="divider">
+      <article class="row">
+        <div class="col-md-7">
+             <a id="mercado">
+          <h2 class="featured-heading"><a id="cashManagement">Contabilidade para investidores</a></h2>
+          <p class="lead">Esta investindo numa start-up ?  É um investidor serial? Não consegue analisar relatórios contábeis com credibilidade? </span></p>
+          <p class="lead">Blockchain é a solução, somos a primeira empresa brasileira a gerar informações contábeis em Blockchain. Veja neste <a href="http://finance.econobilidade.com/cash/">link</a>
+                    e entenda cada centavo do seu investimento, reduzindo custos com auditorias e gerando o VALUATION em tempo real.</p>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <img class="featured-image img-responsive center-block" src="{% static "images/presentation.svg" %}" alt="presentation">
+            <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div>
+      </article>
+      <br>
+         <br>
+            <br>
+
+
+      <footer>
+        <p>&copy; 2018 ECONOBILIDADE &middot; <a href="{% url 'finance' %}">Privacy Policy</a> &middot; <a href="{% url 'finance' %}">Terms &amp; Conditions</a></p>
+      </footer>
+    </section>
+
+  </body>
+</html>

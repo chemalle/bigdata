@@ -1,0 +1,41 @@
+{% extends 'posts/base2.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+
+<img src="{% static "images/Logo JPG Format-2.jpg" %}" height="400" width="95%" alt="My image"/>
+<img class="mb-4" src="{% static "images/carsten-stalljohann-197892-unsplash.jpg" %}" height="900" width="100%">
+
+  <head>
+    <meta charset="utf-8">
+
+    <div class="container">
+
+
+    <title align='center'>Desculpe</title>
+<br>
+<br>
+    <h1> <strong>Desculpe</strong>  </h1>
+
+  </head>
+
+<br>
+<br>
+
+    <h2>O ativo foi negociado abaixo ou acima dos padroes normais nos ultimos 2 minutos do pregao. Favor tentar novamente em 2 minutos.</h1>
+
+ <br>
+ <br>
+  </div>
+  <body>
+    <td class=xl78 style='border-top:none'>{{df}}</td>
+  </body>
+</html>
+
+
+{% endblock %}

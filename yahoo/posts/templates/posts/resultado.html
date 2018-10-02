@@ -1,0 +1,60 @@
+{% extends "posts/cash_flow.html" %}
+
+
+{% load staticfiles %}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Economic News</title>
+  </head>
+
+  {% block content %}
+  <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
+  <img src="{% static 'images/sweet-ice-cream-photography-97452-unsplash.jpg' %}" height="200" width="100%" alt="Smiley face">
+
+
+  </div>
+
+  <body>
+
+<!--
+<img src="{% static "images/Logo JPG Format-2.jpg" %}" height="400" width="100%" alt="My image"/> -->
+
+
+<div class="container">
+
+<h1>Abaixo a analise da sua empresa <strong>{{company}}</strong> com base no seu extrato bancário desprezando o endividamento e estratégias, bem como valores a receber relevantes de períodos passados ou mesmo pagamentos superiores a 30 dias</h1>
+{% load l10n %}
+{% localize on %}
+
+
+<h2 align='center'> {{ talk|localize }}</h2>
+
+{% endlocalize %}
+<h3>Sua geração de caixa nos próximos 30 dias:</h3>
+
+<td class=xl77 style='border-top:none'> R$ {{ resultado | safe }}</td>
+</div>
+
+
+<br>
+<br>
+<button onclick="goBack()">Retornar para Home Page</button>
+<br/>
+
+
+
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+<br>
+<br>
+  {% endblock %}
+
+</body>
+</html>

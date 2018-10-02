@@ -1,0 +1,58 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Sugerido</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <meta name="udacity-grader" content="http://udacity.github.io/fend/lessons/L5/problem-set/09-div-soup-clean-up/tests.json">
+  </head>
+  <body>
+    <header class="navbar-static-top">
+      <section class="container">
+          <a class="navbar-brand" href="{% url 'finance' %}">ECONOBILIDADE</a>
+          <nav>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://econobilidade.com">About</a></li>
+              <li><a href="https://youtu.be/Q0brUMWilXk">Press</a></li>
+              <li><a href="https://econobilidade.com/contact/">Contact</a></li>
+              <li><a href="http://finance.econobilidade.com/#blog">Blog</a></li>
+            </ul>
+          </nav>
+      </section>
+
+
+    </header>
+
+    <section class="container hero">
+      <div class="hero-image">
+      <img src="{% static "images/rawpixel-594848-unsplash.jpg" %}" width="100%" height="600"></div>
+      <div class="hero-text">
+        <h1 class="headline">O futuro esta aqui!</h1>
+        <p class="teaser">Pronto para transformar a contabilidade num Big Data esmagador da concorrência?</p>
+        <button class="btn btn-primary btn-lg" onclick="location.href = 'http://contabilidade.econobilidade.com';">Entenda melhor aqui!</button>
+      </div>
+
+    </section>
+
+
+ {% block content %}
+
+
+
+
+{% endblock %}
+
+  </body>
+
+  <footer>
+    <p>&copy; 2018 ECONOBILIDADE &middot; <a href="{% url 'finance' %}">Privacy Policy</a> &middot; <a href="{% url 'finance' %}">Terms &amp; Conditions</a></p>
+  </footer>
+
+</html>

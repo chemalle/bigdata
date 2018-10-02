@@ -1,0 +1,882 @@
+{% load staticfiles %}
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="enableFluid js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions supports wf-myriadpro-n4-active wf-myriadpro-n7-active wf-myriadpro-i7-active wf-myriadpro-i4-active wf-active" style=""><head data-at-mbox-name="geo-mbox" class="mbox-name-geo-mbox at-element-marker">
+        <meta charset="utf-8">
+
+        <title>Relatório de Fluxo de Caixa</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/apple-touch-icon.png">
+        <link rel="shortcut icon" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/favicon.ico">
+
+        <meta name="application-name" content="Xero">
+        <meta name="msapplication-tooltip" content="Online Accounting Software for Small Businesses">
+        <meta name="msapplication-starturl" content="/?pinned=true">
+        <meta name="msapplication-TileColor" content="#45474d">
+        <meta name="msapplication-TileImage" content="https://www.xero.com/blog/wp-content/themes/theme-2016-4/metro-tile.png">
+
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//bat.bing.com/bat.js" async=""></script><script src="https://connect.facebook.net/signals/config/797489237016738?v=2.8.18&amp;r=stable" async=""></script><script src="https://connect.facebook.net/signals/config/164314984145898?v=2.8.18&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://sjs.bizographics.com/insight.min.js"></script><script type="text/javascript" async="" src="//munchkin.marketo.net/154/munchkin.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-5MXLB2&amp;l=TagManagerDataLayer"></script><script src="//use.typekit.net/ofi6kdi.js"></script>
+        <style type="text/css">.tk-myriad-pro{font-family:"myriad-pro",sans-serif;}</style><style type="text/css">@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/0b0398/00000000000000000001709e/25/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/0b0398/00000000000000000001709e/25/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/0b0398/00000000000000000001709e/25/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/3e6d65/00000000000000000001709f/25/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/3e6d65/00000000000000000001709f/25/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/3e6d65/00000000000000000001709f/25/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/a78845/00000000000000000001709b/25/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/a78845/00000000000000000001709b/25/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/a78845/00000000000000000001709b/25/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:myriad-pro;src:url(https://use.typekit.net/af/412fe8/00000000000000000001709a/25/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/412fe8/00000000000000000001709a/25/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/412fe8/00000000000000000001709a/25/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}</style><script>try {
+                Typekit.load();
+            } catch (e) {
+            }</script>
+
+        <link rel="pingback" href="https://www.xero.com/blog/xmlrpc.php">
+
+
+<!-- This site is optimized with the Yoast SEO plugin v4.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Cash flow ensures that a business can pay bills and staff, keeping the business operational. That’s why the Statement of Cash Flows report is so important.">
+<meta name="robots" content="noodp">
+<link rel="canonical" href="https://www.xero.com/blog/2015/12/statement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business/">
+<link rel="publisher" href="https://plus.google.com/+xero/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ECONOBILIDADE">
+<meta property="og:description" content="Cash flow ASSEGURA that a business can pay bills and staff, keeping the business operational. That’s why the Statement of Cash Flows report is so important.">
+<meta property="og:url" content="https://www.xero.com/blog/2015/12/statement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business/">
+<meta property="og:site_name" content="Xero Blog">
+<meta property="article:section" content="Product">
+<meta property="article:published_time" content="2015-12-18T01:06:19+12:00">
+<meta property="article:modified_time" content="2015-12-18T09:45:22+12:00">
+<meta property="og:updated_time" content="2015-12-18T09:45:22+12:00">
+<meta property="og:image" content="https://www.xero.com/blog/wp-content/uploads/2015/12/statement-of-cash-flows1.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Cash flow ensures that a business can pay bills and staff, keeping the business operational. That’s why the Statement of Cash Flows report is so important.">
+<meta name="twitter:title" content="Statement of Cash Flows for business | Xero Blog">
+<meta name="twitter:site" content="@xero">
+<meta name="twitter:image" content="https://www.xero.com/blog/wp-content/uploads/2015/12/statement-of-cash-flows1.png">
+<meta name="twitter:creator" content="@xero">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Xero Blog » Feed" href="https://www.xero.com/blog/feed/">
+<link rel="alternate" type="application/rss+xml" title="Xero Blog » Comments Feed" href="https://www.xero.com/blog/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Xero Blog » Statement of Cash Flows is the key to understanding the health of your business Comments Feed" href="https://www.xero.com/blog/2015/12/statement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.xero.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.xero.com/blog/wp-includes/js/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wordpress-popular-posts-css" href="https://www.xero.com/blog/wp-content/plugins/wordpress-popular-posts/style/wpp.css" type="text/css" media="all">
+<link rel="stylesheet" id="highlight-and-share-css" href="https://www.xero.com/blog/wp-content/plugins/highlight-and-share/css/highlight-and-share.css" type="text/css" media="all">
+<link rel="stylesheet" id="fonts-style-css" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/blog-fonts/styles.css" type="text/css" media="screen, handheld, tv">
+<link rel="stylesheet" id="stylesheet-css" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/css/style.css" type="text/css" media="screen, handheld, tv">
+<link rel="stylesheet" id="print-css" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/css/print.css" type="text/css" media="print">
+<link rel="stylesheet" id="blog-stylesheet-css" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/css/xero-style.css" type="text/css" media="screen, handheld, tv">
+<link rel="stylesheet" id="applib-css" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/css/applib.css" type="text/css" media="screen">
+<link rel="stylesheet" id="video-thumbs-css" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/blog-css/thumbs.css" type="text/css" media="screen, handheld, tv">
+<link rel="stylesheet" id="video-slider-css" href="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/base/slider.css" type="text/css" media="screen, handheld, tv">
+<script type="text/javascript">
+/* <![CDATA[ */
+var siteVar = {"tempPath":"https:\/\/www.xero.com\/blog\/wp-content\/themes\/theme-2016-4","ajaxURL":"https:\/\/www.xero.com\/blog\/wp-admin\/admin-ajax.php","siteURL":"https:\/\/www.xero.com\/blog","pageUrl":"https:\/\/www.xero.com:80\/2015\/12\/statement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/plugins/stop-user-enumeration/js/commentauthor.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/plugins/wp-ajaxify-comments/js/wp-ajaxify-comments.min.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/vendor/modernizr.custom.min.js"></script>
+<link rel="https://api.w.org/" href="https://www.xero.com/blog/wp-json/">
+<link rel="shortlink" href="https://www.xero.com/blog/?p=56662">
+<link rel="alternate" type="application/json+oembed" href="https://www.xero.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.xero.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F&amp;format=xml">
+<script type="text/javascript">/* <![CDATA[ */if (!window["WPAC"]) var WPAC = {};WPAC._Options = {debug:false,selectorCommentForm:"#commentform",selectorCommentsContainer:"#comments",selectorCommentPagingLinks:"#comments [class^='comment-nav-'] a",selectorCommentLinks:"#comments a[href*=\"/comment-page-\"]",selectorRespondContainer:"#respond",selectorErrorContainer:"p:parent",popupCornerRadius:3,popupMarginTop:20,popupWidth:30,popupPadding:10,popupFadeIn:400,popupFadeOut:400,popupTimeout:3000,popupBackgroundColorLoading:"#009DD3",popupTextColorLoading:"#FFFFFF",popupBackgroundColorSuccess:"#3CA773",popupTextColorSuccess:"#FFFFFF",popupBackgroundColorError:"#F56942",popupTextColorError:"#FFFFFF",popupOpacity:100,popupTextAlign:"center",popupTextFontSize:"Default font size",popupZindex:1000,scrollSpeed:500,autoUpdateIdleTime:0,textPosted:"Your comment has been posted. Thank you!",textPostedUnapproved:"Your comment has been posted and is awaiting moderation. Thank you!",textReloadPage:"Reloading page. Please wait&hellip;",textPostComment:"Posting your comment. Please wait&hellip;",textRefreshComments:"Loading comments. Please wait&hellip;",textUnknownError:"Something went wrong, your comment has not been posted.",selectorPostContainer:"",commentPagesUrlRegex:"",asyncLoadTrigger:"DomReady",disableUrlUpdate:false,disableScrollToAnchor:false,disableCache:true,enableByQuery:false,commentsEnabled:true,version:"1.5.0"};WPAC._Callbacks = {"beforeSelectElements": function(dom) {},"beforeUpdateComments": function(newDom, commentUrl) {},"afterUpdateComments": function(newDom, commentUrl) {},"beforeSubmitComment": function() {},"afterPostComment": function(commentUrl, unapproved) {}};/* ]]> */</script>				<!-- WordPress Popular Posts v3.3.4 -->
+				<script type="text/javascript">
+
+					var sampling_active = 0;
+					var sampling_rate   = 100;
+					var do_request = false;
+
+					if ( !sampling_active ) {
+						do_request = true;
+					} else {
+						var num = Math.floor(Math.random() * sampling_rate) + 1;
+						do_request = ( 1 === num );
+					}
+
+					if ( do_request ) {
+
+						/* Create XMLHttpRequest object and set variables */
+						var xhr = ( window.XMLHttpRequest )
+						  ? new XMLHttpRequest()
+						  : new ActiveXObject( "Microsoft.XMLHTTP" ),
+						url = 'https://www.xero.com/blog/wp-admin/admin-ajax.php',
+						params = 'action=update_views_ajax&token=bcc3be03de&wpp_id=56662';
+						/* Set request method and target URL */
+						xhr.open( "POST", url, true );
+						/* Set request header */
+						xhr.setRequestHeader( "Content-type", "application/x-www-form-urlencoded" );
+						/* Hook into onreadystatechange */
+						xhr.onreadystatechange = function() {
+							if ( 4 === xhr.readyState && 200 === xhr.status ) {
+								if ( window.console && window.console.log ) {
+									window.console.log( xhr.responseText );
+								}
+							}
+						};
+						/* Send request */
+						xhr.send( params );
+
+					}
+
+				</script>
+				<!-- End WordPress Popular Posts v3.3.4 -->
+				                	<meta property="og:image" content="https://www.xero.com/blog/wp-content/uploads/2015/12/Blog_Cash-flow-Short_800x480_acf_cropped.png">
+                <script type="text/javascript" src="https://www.xero.com/etc/designs/xero-cms/clientlib/personalization/head.min.js"></script><script type="text/javascript" async="" src="//munchkin.marketo.net/munchkin.js"></script><style id="at-makers-style" class="at-flicker-control">
+.mboxDefault {visibility:hidden;}
+</style>
+    <script async="" src="//static.hotjar.com/c/hotjar-11035.js?sv=5"></script><script async="" src="https://script.hotjar.com/modules-3bff6eb80a227a2b1cbd73e79ce83a48.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><script>
+function xatGeo() {
+  if (window.$) {
+    var xatGeoIso = '';
+    $.ajax({
+      url: 'https://restcountries.eu/rest/v1/name/brazil',
+      type: 'GET',
+      dataType: 'json'
+    }).then(function (response) {
+      if (response && response.length > 0) {
+        xatGeoIso = response[response.length - 1].alpha2Code;
+      }
+    }).always(function () {
+      var profileObj = JSON.parse('{"country":"brazil","city":"sorocaba","dma":"not metroized","state":"sao paulo","zip":"18025-000","lat":-23.512500762939453,"long":-47.44559860229492,"ispName":"telefonica brasil s.a.","domainName":"gvt.net.br"}');
+      profileObj.iso = xatGeoIso;
+      if (window.localStorage) {
+        window.localStorage.setItem('xat-p', JSON.stringify(profileObj));
+      }
+    });
+  } else {
+    setTimeout(xatGeo, 50);
+  }
+}
+xatGeo();
+</script><script type="text/javascript">
+var targetCampaignsExclusion = 'DEV-';
+
+if('DEV-00003 - GEO-COOKIE-DO-NOT-DEACTIVATE'.length > 0 && 'Experience A'.length > 0)  {
+   window.xeroAdobeTargetCheck = window.xeroAdobeTargetCheck || [];
+   window.xeroAdobeTargetCheck.push('DEV-00003 - GEO-COOKIE-DO-NOT-DEACTIVATE :: Experience A');
+
+   if('DEV-00003 - GEO-COOKIE-DO-NOT-DEACTIVATE'.indexOf(targetCampaignsExclusion) === -1) {
+    window.xeroAdobeTargetEvents = window.xeroAdobeTargetEvents || [];
+    window.xeroAdobeTargetEvents.push(function(){
+      window.ga('send', 'event', 'Adobe Target', 'DEV-00003 - GEO-COOKIE-DO-NOT-DEACTIVATE', 'Experience A', 1);
+      window.ga('set', 'dimension' + 6, 'Adobe Target:' + 'DEV-00003 - GEO-COOKIE-DO-NOT-DEACTIVATE' + ':' + 'Experience A');
+    });
+  }
+}
+</script></head>
+
+    <body class="post-template-default single single-post postid-56662 single-format-standard pageClass single_post_page" itemscope="" itemtype="http://schema.org/WebPage">
+        <div class="mboxDefault"></div>
+        <div id="marketo-mbox"></div>
+        <script type="text/javascript" src="https://www.xero.com/etc/designs/xero-cms/clientlib/personalization/body.min.js"></script>
+                <div id="page">
+            <div id="wrapper">
+                <div id="inner_wrapper">
+                    <!--   HEADER SECTION STARTS HERE -->
+                    <header role="banner" class="">
+                        <div class="header">
+                            <!--   header top section Start here -->
+                            <div class="logo_sec">
+                                <div class="container">
+                                    <div class="bdr_btm">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 col-xs-6 new_custom_mb_logo">
+                                                <div class="logo_wrap">
+                                                     <a href="https://finance.econobilidade.com/finance">   <h1>ECONOBILIDADE</h1> </a>                                                 </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-6 col-xs-6 ">
+                                                <div class="right_ads clear">
+                                                    <span>Brought to you by</span>                                                    <a href="https://finance.econobilidade.com/finance">                                                        <img class="main-nav__brand__logo" src="https://econobilidade.files.wordpress.com/2016/06/econobilidade-e1466430691521.png" alt="#eco">
+                                                             </a>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--   header Menu section Start here -->
+                            <div class="menu_sec">
+                                <div class="container">
+                                    <div class="custom_menu">
+                                        <div class="menu_wrap_here clear">
+                                            <div class="search_wrap clear">
+                                                <div class="mobileMenu_icon clear mobile_view ">
+                                                    <a href="#" class="mobileMenu_open">
+                                                        <span class="line one"></span>
+                                                        <span class="line two"></span>
+                                                        <span class="line three"></span>
+                                                    </a>
+                                                    <span class="topic_wrap"> Topics</span>
+                                                </div>
+                                                <div class="menu_right_sec">
+                                                    <a href="https://finance.econobilidade.com/finance" class="subscribe_here">Seu relatório</a>
+                                                    <a href="https://finance.econobilidade.com/finance" class="serach_here">
+                                                        <svg width="20px" height="21px" viewBox="1149 118 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+                                                        <desc>Created with Sketch.</desc>
+                                                        <defs></defs>
+                                                        <g id="ico-search-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1149.000000, 118.000000)">
+                                                        <path d="M13.7959064,12.5654107 L19.7236687,18.4931731 L18.208332,20.0085098 L12.3005832,14.1014572 C11.0346872,15.0763573 9.44876545,15.656114 7.72743148,15.656114 C3.58436795,15.656114 0.225764455,12.2975105 0.225764455,8.15444701 C0.225764455,4.01138348 3.58436795,0.652779984 7.72743148,0.652779984 C11.870495,0.652779984 15.2290985,4.01138348 15.2290985,8.15444701 C15.2290985,9.80303871 14.6973065,11.3274212 13.7959064,12.5654107 Z M7.72886037,2.79468453 C10.6880894,2.79468453 13.087194,5.19307464 13.087194,8.15301812 C13.087194,11.1122471 10.6880894,13.5106373 7.72886037,13.5106373 C4.76891689,13.5106373 2.37052678,11.1122471 2.37052678,8.15301812 C2.37052678,5.19307464 4.76963134,2.79468453 7.72886037,2.79468453 Z" id="ico-search" fill="#86878B"></path>
+                                                        </g>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="mainMenu primeNav header_menu  tablet_view desktop_view mobile_nav">
+                                                <nav class="menu-header-menu-container"><ul><li id="item-id"></li><li id="menu-item-63884" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-63884"><a href="http://finance.econobilidade.com/#blog">Blog</a></li>
+<li id="menu-item-63885" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-63885"><a href="http://finance.econobilidade.com/report/">Análise do seu segmento</a></li>
+<li id="menu-item-63886" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-63886"><a href="http://finance.econobilidade.com/valuation/">Valuation</a></li>
+<li id="menu-item-63888" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-63888"><a href="http://finance.econobilidade.com/stocks/">Ações</a></li>
+<li id="menu-item-63887" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-63887"><a href="https://finance.econobilidade.com/candle/">e-books</a></li>
+</ul></nav>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Search Form area Start Here-->
+                            <form role="search" method="get" class="main-nav__slider main-nav__slider--search" id="js-main-nav__slider--search" action="https://finance.econobilidade.com/finance">
+                                <div class="container">
+                                    <input class="main-nav__slider--search__input" type="search" name="s" required="" placeholder="Start typing to search">
+                                    <button type="submit" class="main-nav__slider--search__submit">
+                                        <span class="hide-element">Submit</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <!--    Newsletter Form area Start Here-->
+                            <div class="main-nav__slider main-nav__slider--newsletter" id="js-main-nav__slider--newsletter">
+                                <div class="newsletter-form" data-type="slideForm">
+    <form class="newsletter-form__form">
+        <div class="container">
+            <img class="newsletter-form__icon" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/images/newsletter-dark.png" srcset="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/images/newsletter-dark.png 1x, https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/images/newsletter-dark@2x.png 2x" alt="">
+            <img class="newsletter-form__icon light" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/images/newsletter.png" srcset="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/images/newsletter.png 1x, https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/images/newsletter@2x.png 2x" alt="">
+
+            <div class="newsletter-form__description-terms">
+                <div class="newsletter-form__description">
+                    <a id="itau">
+                    Importe seu extrato Itaú dos últimos 30 dias e receba na hora o relatório do seu segmento, geração de Caixa e Análise de Balanço
+                </div>
+            </div>
+
+            <div class="newsletter-form__email-submit">
+
+
+
+                <button class="newsletter-form__submit" onclick="location.href = '{% url 'subscription' %}';">
+
+                    <span class="newsletter-form__submit__text">
+                        Analisar agora!
+                    </span>
+
+                    <svg class="newsletter-form__submit__icon" width="14" height="11" viewBox="0 0 14 11">
+                    <path fill="none" stroke="#FFF" stroke-width="1.5" d="M1.475 6.9l3.95 3.266 6.93-8.645" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div class="newsletter-form__success">
+        Obrigado por analisar sua empresa conosco!    </div>
+</div>
+
+                            </div>
+                        </div>
+
+                    </header>
+
+
+                    {% block content %}
+                            {% endblock %}
+
+                    <!--   HEADER SECTION ENDS HERE -->
+                    <!--   Alert Area Start here-->
+
+<div class="mainContainer">
+    <div class="page_body_wrap ">
+
+
+
+
+                <div class="container">
+    <div class=" singleBlogDet">
+        <div class="row">
+            <div class="inner_div_area">
+                <div class="singleSocialHolder">
+                    <!--SOCIAL SHARE  STARTS HERE-->
+                    <ul class="postSocial">
+
+                        <li class="social-media-nav__facebook">
+                            <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[title]=Statement+of+Cash+Flows+is+the+key+to+understanding+the+health+of+your+business&amp;p[summary]=Xero+online+accounting+software+for+business.+Web+based+system+for+invoicing%2Fbilling%2C+accounts+payable%2C+bank+reconciliation+and+bookkeeping.+Free+Trial.&amp;p[url]=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F" data-gacategory="Social Media Link" data-gaaction="Facebook Button" data-galabel="Article: Statement of Cash Flows is the key to understanding the health of your business">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" class="svgIcon replaced-svg"><g><path d="M308.1,382.5c0,40.3-0.1,80.6,0.1,121c0,4.4-1,5.6-5.5,5.5c-34.3-0.2-68.6-0.2-103,0   c-4.7,0-5.8-1.3-5.8-5.9c0.1-80.1,0.1-160.3,0.2-240.4c0-4.4-0.8-6-5.6-5.9c-15.2,0.3-30.3,0-45.5,0.2c-3.5,0-4.5-1-4.5-4.5   c0.1-25.3,0.2-50.7,0-76c0-3.9,1.4-4.7,4.9-4.6c15.2,0.2,30.3-0.1,45.5,0.2c4.3,0.1,5.2-1.3,5.2-5.4c-0.2-22.3-0.2-44.7,0-67   c0.2-19.3,4.1-37.6,15.5-53.8c12.1-17.2,28.9-27.6,48.6-33.9c14.7-4.7,29.9-6.7,45.2-6.8c29-0.4,58-0.1,87-0.3c4.1,0,5,1.3,5,5.2   c-0.1,26-0.2,52,0,78c0,4.3-1.3,5.2-5.4,5.2c-18.3-0.2-36.7-0.1-55-0.1c-16.1,0-26.6,10.6-26.6,26.5c0,15.8,0.1,31.7-0.1,47.5   c0,3.8,1.1,4.8,4.8,4.8c25.7-0.1,51.3,0,77-0.2c3.9,0,5.3,0.9,4.8,5c-2.9,26-5.2,52-9.8,77.8c-0.6,3.2-2.6,2.4-4.4,2.4   c-15.2,0-30.3,0-45.5,0c-7.3,0-14.7,0.2-22-0.1c-4.1-0.2-5.3,1-5.2,5.2C308.1,302.2,308.1,342.3,308.1,382.5z" fill="#4862A3"></path></g></svg>
+                            </a>
+                        </li>
+
+                        <li class="social-media-nav__twitter">
+                            <a target="_blank" href="http://twitter.com/home?status=Statement+of+Cash+Flows+is+the+key+to+understanding+the+health+of+your+business%2C via @Xero: https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F" data-gacategory="Social Media Link" data-gaaction="Twitter Button" data-galabel="Article: Statement of Cash Flows is the key to understanding the health of your business">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" class="svgIcon replaced-svg"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" fill="#55ACEE"></path><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                            </a>
+                        </li>
+
+                        <li class="social-media-nav__linkedin">
+                            <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F&amp;title=Statement+of+Cash+Flows+is+the+key+to+understanding+the+health+of+your+business | Xero Blog&amp;summary=For+small+businesses+cash+is+king.+Cash+flow+ensures+that+a+business+can+pay+its+bills+and+staff%2C+keeping+the+business+operational.+That%E2%80%99s+why+the+Statement+of+Cash+Flows+report+is+so+import..." data-gacategory="Social Media Link" data-gaaction="LinkedIn Button" data-galabel="Article: Statement of Cash Flows is the key to understanding the health of your business">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" class="svgIcon replaced-svg"><g><path d="M276.3,217.1c6.8-8.4,11.8-16.3,18.4-23c12.4-12.7,26.8-21.7,43.6-27.4c18.6-6.3,37.8-7.2,56.8-5.3   c30.8,2.9,57.7,14.9,78.6,38.4c9.8,11,17.1,23.6,22.4,37.3c4.1,10.7,7.3,21.5,9.2,32.8c1.6,9.7,3.6,19.4,3.6,29.3   c0.1,68.5,0.1,137,0.2,205.5c0,3.4-0.8,4.5-4.3,4.5c-31.3-0.1-62.7-0.2-94,0c-4.5,0-5.1-1.6-5.1-5.5c0.1-59.8,0.1-119.7,0.1-179.5   c0-11-0.7-22.1-3.9-32.5c-5.4-17.6-16.3-30.4-34.2-36.9c-15-5.4-30.2-6.4-45.5-2.5c-16.9,4.3-28.8,15.4-37.2,30.4   c-4.7,8.4-6.6,17.2-7.6,26.8c-0.7,7.3-0.9,14.5-0.9,21.8c-0.1,57.3-0.1,114.7,0.1,172c0,4.9-1.3,6-6,5.9c-30.3-0.2-60.7-0.3-91,0   c-5.4,0.1-6.1-1.7-6.1-6.4c0.2-105.7,0.2-211.3,0.2-317c0-12.5-0.1-12.5,12.4-12.5c28.5,0,57,0.1,85.5-0.1c4,0,5,1.2,4.9,5.1   C276.2,190.7,276.3,203.1,276.3,217.1z" fill="#0177B5"></path><path d="M5.3,342.5c0-53.7,0.1-107.3-0.1-161c0-4.5,1.1-6,5.8-6c30.8,0.2,61.7,0.2,92.5,0c4.6,0,5.7,1.5,5.7,6   c-0.1,107.1-0.1,214.3,0,321.4c0,4.7-1,6.2-6,6.1c-30.8-0.2-61.7-0.2-92.5,0c-4.4,0-5.5-1.2-5.5-5.6C5.4,449.8,5.3,396.2,5.3,342.5   z" fill="#0378B5"></path><path d="M55.9,4.7c33.3-1.1,52.9,23.5,53,52.6c0,29.9-21.1,52.1-53.6,52.2C23.8,109.6,2.7,87.8,2.5,56.9   C2.3,27.6,23.7,3.7,55.9,4.7z" fill="#0378B5"></path></g></svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!--SOCIAL SHARE  ENDS HERE-->
+                </div>
+                <div class="tableHolder blogTopDetails">
+                    <div class="tabCellLeft blogTitle">
+                        <h2>Statement of Cash Flows is the key to understanding the health of your business</h2>
+                                                <div class="submit_des">
+                                                                                 <span class="auther_name_sec">by <a href="https://finance.econobilidade.com/finance/">Eduardo Chemalle</a></span>
+                        </div>
+                    </div>
+                    <div class="tabCellRyt blogAuthor">
+
+                        <div class="authorImg"> <img alt="" src="Eduardo Chemalle" srcset="{% static "images/IMG_6849.JPG" %}" class="avatar avatar-90 photo" height="90" width="90"></div>
+
+
+
+                        <div class="authorDet">
+                            Desenvolvido em Python por
+                            <span><a href="https://finance.econobilidade.com/finance">	Eduardo Chemalle</a></span>
+                            IMG_6849.JPG
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-9 col-xs-12">
+                                    <div class="post_div_img">
+                        <img src="https://www.xero.com/blog/wp-content/uploads/2015/12/Blog_Cash-flow-Short_800x480_acf_cropped.png" alt="" title="">
+                    </div>
+                                <div class="post_div_wrap clear">
+                    <article id="post-56662" class="cf post-56662 post type-post status-publish format-standard hentry category-product" role="article" itemscope="" itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+
+                        <div class="has-content-area" data-url="https://www.xero.com/blog/2015/12/statement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business/" data-title="Statement of Cash Flows is the key to understanding the health of your business"><p>For small businesses cash is king. Cash flow ensures that a business can pay its bills and staff, keeping the business operational. That’s why the Statement of Cash Flows report is so important. It identifies the cash flowing in and out of a business, and can help you make informed decisions about how your business operates.</p>
+<p>While the Profit and Loss includes income that might not yet have been paid by your customers, the cash flow statement looks at all cash receipts and cash expenditure. It also groups the money going in and going out of your business into useful categories.</p>
+<h2>What benefits does a cash flow statement provide?</h2>
+<p>The Statement of Cash Flows can help you understand:</p>
+<ul>
+<li>Are you generating a cash surplus? Regardless of having to buy new equipment or raising money via loans, this shows you if you’re profitable. And if not, why not?</li>
+<li>Did your cash drop because you invested in things that you expect to make you money in the future? This could be buying new equipment, or classic investing in shares etc.</li>
+<li>Did you end up with more money in this period because you took out loans? If so, then that tells you in the future that you will lose cash to repay the debt.</li>
+</ul>
+<h2>What goes into the cash flow statement?</h2>
+<p>Your business generates cash in many different ways. The Statement of Cash Flows breaks it down into three main sections:</p>
+<ul>
+<li><strong>Cash Flows from Operating Activities</strong> shows what cash has come in and gone out as a result of the main business activities, (such as receipts from customers, payments to suppliers, wages paid to employees and so on.)</li>
+<li><strong>Cash Flows from Investing Activities</strong> includes things such as payments for new assets like office equipment or a new company vehicle. It also includes receipts from the sale of assets, and any investments made.</li>
+<li><strong>Cash Flows from Financing Activities</strong> shows any loan repayments, proceeds from new loans, or money invested into the business or taken out by the owners.</li>
+</ul>
+<h2><a href="http://www.xero.com/blog/wp-content/uploads/2015/12/statement-of-cash-flows1.png"><img class="aligncenter wp-image-56686 size-full" src="https://www.xero.com/blog/wp-content/uploads/2015/12/statement-of-cash-flows1.png" alt="statement-of-cash-flows" width="1265" height="1262" srcset="https://www.xero.com/blog/wp-content/uploads/2015/12/statement-of-cash-flows1.png 1265w, https://www.xero.com/blog/wp-content/uploads/2015/12/statement-of-cash-flows1-150x150.png 150w, https://www.xero.com/blog/wp-content/uploads/2015/12/statement-of-cash-flows1-481x480.png 481w, https://www.xero.com/blog/wp-content/uploads/2015/12/statement-of-cash-flows1-1002x1000.png 1002w" sizes="(max-width: 1265px) 100vw, 1265px"></a></h2>
+<h2>Getting the most from your report</h2>
+<p>Like the new Profit and Loss report, you can modify the layout of your cash flow statement. It’s easy to lay out the order of groups and accounts on your report just the way you want. This is done using an intuitive drag and drop interface. You can also split an account into its debits and credits in the Statement of Cash Flows using the layout editor. As with all new reports, the dates are entered using a convenient date picker to quickly select common dates.</p>
+<p>To get the most from this report we recommend working with your advisor to customize the layout. This can provide a more granular breakdown of where you’ve earned and spent cash. This is useful as not every business’s chart of accounts is the same. An advisor can also help you understand the report. You can make informed decisions about how your business operates to maintain good cash flow and identify investment opportunities.</p>
+<h2>Learn more</h2>
+<p>Check out our <a href="https://finance.econobilidade.com/finance" target="_blank">Tudo para sua empresa crescer mais rápido</a>.</p>
+
+</div>                    </article>
+                </div>
+
+            </div>
+                        <!--            POPULAR THIS WEEK SECTION : FOR DESKTOP AND TABLET VIEW STARTS HERE-->
+            <div class="col-md-4 col-sm-3 col-xs-12 desktop_view tablet_view">
+                <!--    FREE TRIAL SECTION STARTS HERE-->
+                                <!--                    FREE TRIAL SECTION ENDS HERE-->
+                <div class="popular_wrap ">
+                                            <h3>Popular</h3>
+                                                        <div class="popular_sec_start  desktop_view tablet_view j_1">
+                                    <div class="pop_small_img">
+                                        <a href="https://www.xero.com/blog/2017/12/game-phones-5-great-apps-entrepreneurs/">  <img src="https://www.xero.com/blog/wp-content/uploads/2017/12/Curve-guest-blog-header-1_800x480_acf_cropped.jpg"></a>
+                                    </div>
+                                    <div class="popular_right_content">
+                                        <p> <a class="popular_this_week" href="https://www.xero.com/blog/2017/12/game-phones-5-great-apps-entrepreneurs/"> Game of Phones: 5 great apps for entrepreneurs</a></p>
+                                        <div class="submit_des">
+                                            by <a href="https://www.xero.com/blog/author/guest/">Guest</a> | 18 December 2017                                        </div>
+                                    </div>
+
+                                </div>
+                                                                <div class="popular_sec_start  desktop_view tablet_view j_2">
+                                    <div class="pop_small_img">
+                                        <a href="https://www.xero.com/blog/2017/12/refugee-entrepreneur-build-global-business-kowtow/">  <img src="https://www.xero.com/blog/wp-content/uploads/2017/05/gosia-resized_800x480_acf_cropped-1.jpg"></a>
+                                    </div>
+                                    <div class="popular_right_content">
+                                        <p> <a class="popular_this_week" href="https://www.xero.com/blog/2017/12/refugee-entrepreneur-build-global-business-kowtow/"> From refugee to entrepreneur: What it takes to build a global bu..</a></p>
+                                        <div class="submit_des">
+                                            by <a href="https://www.xero.com/blog/author/andrea-silvers/">Andrea Silvers</a> | 15 December 2017                                        </div>
+                                    </div>
+
+                                </div>
+                                                                <div class="popular_sec_start  desktop_view tablet_view j_3">
+                                    <div class="pop_small_img">
+                                        <a href="https://www.xero.com/blog/2017/12/christmas-gift-guide-support-small-businesses/">  <img src="https://www.xero.com/blog/wp-content/uploads/2017/12/christmas-gift-guide_800x480_acf_cropped.jpg"></a>
+                                    </div>
+                                    <div class="popular_right_content">
+                                        <p> <a class="popular_this_week" href="https://www.xero.com/blog/2017/12/christmas-gift-guide-support-small-businesses/"> Your Christmas gift guide to support small businesses</a></p>
+                                        <div class="submit_des">
+                                            by <a href="https://www.xero.com/blog/author/tiana-barns/">Tiana Barns</a> | 14 December 2017                                        </div>
+                                    </div>
+
+                                </div>
+                                                                <div class="popular_sec_start  desktop_view j_4">
+                                    <div class="pop_small_img">
+                                        <a href="https://www.xero.com/blog/2016/12/give-your-firm-fresh-start-2017/">  <img src="https://www.xero.com/blog/wp-content/uploads/2016/12/season_image-nocopy.jpg"></a>
+                                    </div>
+                                    <div class="popular_right_content">
+                                        <p> <a class="popular_this_week" href="https://www.xero.com/blog/2016/12/give-your-firm-fresh-start-2017/"> 3 ways you can give your firm a fresh start in 2017</a></p>
+                                        <div class="submit_des">
+                                            by <a href="https://www.xero.com/blog/author/sarah-richards/">Sarah Richards</a> | 17 December 2016                                        </div>
+                                    </div>
+
+                                </div>
+                                                                <div class="popular_sec_start  desktop_view j_5">
+                                    <div class="pop_small_img">
+                                        <a href="https://www.xero.com/blog/2017/05/xero-capital-one-partnership/">  <img src="https://www.xero.com/blog/wp-content/uploads/2017/05/53992-Capital-One-Social-Logos-Blog.png"></a>
+                                    </div>
+                                    <div class="popular_right_content">
+                                        <p> <a class="popular_this_week" href="https://www.xero.com/blog/2017/05/xero-capital-one-partnership/"> Xero and Capital One partner to help rewire the small business economy</a></p>
+                                        <div class="submit_des">
+                                            by <a href="https://www.xero.com/blog/author/keri-gohman/">Keri Gohman</a> | 11 May 2017                                        </div>
+                                    </div>
+
+                                </div>
+                                                                <div class="popular_sec_start  desktop_view j_6">
+                                    <div class="pop_small_img">
+                                        <a href="https://www.xero.com/blog/2016/07/change-the-way-you-work-with-reports/">  <img src="https://www.xero.com/blog/wp-content/uploads/2016/07/Practice-Reports-launch-facebook-Layout-Editor_800x480_acf_cropped.png"></a>
+                                    </div>
+                                    <div class="popular_right_content">
+                                        <p> <a class="popular_this_week" href="https://www.xero.com/blog/2016/07/change-the-way-you-work-with-reports/"> Change the way you work with reports</a></p>
+                                        <div class="submit_des">
+                                            by <a href="https://www.xero.com/blog/author/mark-blundell/">Mark Blundell</a> | 26 July 2016                                        </div>
+                                    </div>
+
+                                </div>
+                                                                <div class="popular_sec_start  desktop_view j_7">
+                                    <div class="pop_small_img">
+                                        <a href="https://www.xero.com/blog/2017/02/xero-wins-linkedin-award/">  <img src="https://www.xero.com/blog/wp-content/uploads/2017/02/x_800x480_acf_cropped.jpg"></a>
+                                    </div>
+                                    <div class="popular_right_content">
+                                        <p> <a class="popular_this_week" href="https://www.xero.com/blog/2017/02/xero-wins-linkedin-award/"> Xero Wins Linkedin’s ‘Bring Your Employer Brand to Life’</a></p>
+                                        <div class="submit_des">
+                                            by <a href="https://www.xero.com/blog/author/rachel-powell/">Rachael Powell</a> | 9 February 2017                                        </div>
+                                    </div>
+
+                                </div>
+
+                </div>
+            </div>
+            <!--  POPULAR THIS WEEK SECTION : FOR DESKTOP AND TABLET VIEW ENDS HERE-->
+        </div>
+
+
+
+
+    </div>
+</div>
+<!--FLOATING SOCIAL SHARE  STARTS HERE-->
+<ul class="social-media-nav social-media-nav--sticky cf" style="display: block;">
+
+    <li class="social-media-nav__facebook">
+        <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[title]=Statement+of+Cash+Flows+is+the+key+to+understanding+the+health+of+your+business&amp;p[summary]=Xero+online+accounting+software+for+business.+Web+based+system+for+invoicing%2Fbilling%2C+accounts+payable%2C+bank+reconciliation+and+bookkeeping.+Free+Trial.&amp;p[url]=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F" data-gacategory="Social Media Link" data-gaaction="Facebook Button" data-galabel="Article: Statement of Cash Flows is the key to understanding the health of your business">
+            <img src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/blog-images/icona_fb.svg">
+        </a>
+    </li>
+
+    <li class="social-media-nav__twitter">
+        <a target="_blank" href="http://twitter.com/home?status=Statement+of+Cash+Flows+is+the+key+to+understanding+the+health+of+your+business%2C via @Xero: https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F" data-gacategory="Social Media Link" data-gaaction="Twitter Button" data-galabel="Article: Statement of Cash Flows is the key to understanding the health of your business">
+            <img src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/blog-images/icona_twitter.svg">
+        </a>
+    </li>
+
+    <li class="social-media-nav__linkedin">
+        <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F&amp;title=Statement+of+Cash+Flows+is+the+key+to+understanding+the+health+of+your+business | Xero Blog&amp;summary=For+small+businesses+cash+is+king.+Cash+flow+ensures+that+a+business+can+pay+its+bills+and+staff%2C+keeping+the+business+operational.+That%E2%80%99s+why+the+Statement+of+Cash+Flows+report+is+so+import..." data-gacategory="Social Media Link" data-gaaction="LinkedIn Button" data-galabel="Article: Statement of Cash Flows is the key to understanding the health of your business">
+            <img src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/blog-images/icona_linkedin.svg">
+        </a>
+    </li>
+
+</ul>
+<!--FLOATING SOCIAL SHARE  ENDS HERE-->
+
+<div class="container">
+
+        <!--                    FREE TRIAL SECTION ENDS HERE-->
+            <div class="mobile_view only_mb_view_popular_sec">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class=" right_sec_content mobile_view">
+                        <h3><a href="javascript:void(0)">Popular this week</a></h3>
+                        <ul>                                       <li><a href="https://www.xero.com/blog/2017/12/game-phones-5-great-apps-entrepreneurs/">Game of Phones: 5 great apps for entrepreneurs <span>18 December 2017</span></a></li>
+                                                                        <li><a href="https://www.xero.com/blog/2017/12/refugee-entrepreneur-build-global-business-kowtow/">From refugee to entrepreneur: What it takes to build a global business like Kowtow <span>15 December 2017</span></a></li>
+                                                                        <li><a href="https://www.xero.com/blog/2017/12/christmas-gift-guide-support-small-businesses/">Your Christmas gift guide to support small businesses <span>14 December 2017</span></a></li>
+                                                                        <li><a href="https://www.xero.com/blog/2016/12/give-your-firm-fresh-start-2017/">3 ways you can give your firm a fresh start in 2017 <span>17 December 2016</span></a></li>
+                                                                        <li><a href="https://www.xero.com/blog/2017/05/xero-capital-one-partnership/">Xero and Capital One partner to help rewire the small business economy <span>11 May 2017</span></a></li>
+                                                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div class="blog_sec5 three_grid_sec single_blog_posts postGridAlign">
+        <div class="desktop_view tablet_view mobile_view">
+            <h2 class="heading_style ">Related articles</h2>
+
+            <div class="row">
+
+                                <div class="firstRelatedArr ">
+                                    </div>
+            </div>
+
+            <div class="relatedArticle2">
+                <div class="row">
+
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/06/xero-enterprise-connect/" title="Get paid faster with Xero Enterprise Connect"><img src="http://www.xero.com/blog/wp-content/uploads/2018/06/Xero-Connect-Blog_800x480_acf_cropped-1_800x480_acf_cropped.jpg"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/product/" class="post__category post__category--product">Product</a> </span>                                <span class="text-right"></span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/06/xero-enterprise-connect/" title="Get paid faster with Xero Enterprise Connect"> Get paid faster with Xero Enterprise Connect</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/anna-jamieson/" title="Posts by Anna Jamieson" rel="author">Anna Jamieson</a> |                             12 June 2018            </div>
+            <div class="post__excerpt"><p id="post-85192-desc">Getting paid on time can be a bug bear for many companies – no matter their size or where their payments are flowing from. Late payments mean potential problems with cash flow further down the line.</p></div>
+
+        </div>
+    </div>
+</div><div class="col-md-4 col-sm-6 col-xs-12 articleCol clamp_done" id="post-85166" style="">
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/06/global-release-update-may-2018/" title="Xero Global Release Update May 2018"><img src="http://www.xero.com/blog/wp-content/uploads/2018/06/tier-3-may-blog_800x480_acf_cropped.png"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/product/" class="post__category post__category--product">Product</a> </span>                                <span class="text-right"></span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/06/global-release-update-may-2018/" title="Xero Global Release Update May 2018"> Xero Global Release Update May 2018</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/aqua-delaney/" title="Posts by Aqua Delaney" rel="author">Aqua Delaney</a> |                             12 June 2018            </div>
+            <div class="post__excerpt"><p id="post-85166-desc">Check out the latest updates for small businesses and partners, plus a peek at what’s coming out soon. Xero changes and release updates can be found in Xero Central.
+Recently released &nbsp;
+
+Email-to-bills full release
+Automated bill entry from Xero invoices (BETA)
+Xero Central (new help centre)
+Find and Recode search enhancements
+Pilot: Invoice payments via Outlook with Stripe
+Stop-start timer on Xero Projects (Android &amp; iOS)
+Copy a project in Xero Projects
+Delete a Project on Xero Projects
+New AU Report Templates &amp; Report Codes
+Xero HQ client industry filter
+Xero Checkup
+More flexible invoice reminder design
+Convert a quote to an invoice on mobile
+Attach files directly from cloud file storage services (iOS)
+Mark bills as paid on mobile
+
+Payroll update
+
+Improved contractor onboarding (NZ)
+Improved Direct Deposit onboarding (US)
+
+Coming soon
+
+Updated Trial Balance report
+Improved contact search on mobile
+Payroll: electronic tax and filing in New Mexico
+
+Released
+Easier bill entry – full release
+After rave reviews and significant time saving, we’ve recently released a new feature to all Xero Businesses making it quicker and easier to create bill entries in Xero.</p></div>
+
+        </div>
+    </div>
+</div><div class="col-md-4 col-sm-6 col-xs-12 articleCol clamp_done" id="post-85006" style="">
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/06/mtd-questions-answered/" title="Making Tax Digital for business with Xero: Your questions answered"><img src="http://www.xero.com/blog/wp-content/uploads/2018/06/mtd-june-blog-hero-1_800x480_acf_cropped.jpg"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/advisors/" class="post__category post__category--advisors">Advisors</a> </span>                                <span class="text-right">1 shares</span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/06/mtd-questions-answered/" title="Making Tax Digital for business with Xero: Your questions answered"> Making Tax Digital for business with Xero: Your questions answered</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/damon-anderson/" title="Posts by Damon Anderson" rel="author">Damon Anderson</a> |                             6 June 2018            </div>
+            <div class="post__excerpt"><p id="post-85006-desc">The Making Tax Digital (MTD) for VAT deadline is drawing closer. It’s less than a year until UK businesses that are VAT registered and above the threshold will be required to keep their records digitally, and submit VAT returns to HMRC using MTD-compatible software.</p></div>
+
+        </div>
+    </div>
+</div><div class="col-md-4 col-sm-6 col-xs-12 articleCol clamp_done" id="post-84929" style="">
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/05/managing-contractors-in-xero-payroll-made-easy/" title="Contractor improvements in Xero Payroll for NZ"><img src="http://www.xero.com/blog/wp-content/uploads/2018/06/contractors_nz_header_800x480_acf_cropped.png"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/product/" class="post__category post__category--product">Product</a> </span>                                <span class="text-right"></span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/05/managing-contractors-in-xero-payroll-made-easy/" title="Contractor improvements in Xero Payroll for NZ"> Contractor improvements in Xero Payroll for NZ</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/hayley-tuffin/" title="Posts by Hayley Tuffin" rel="author">Hayley Tuffin</a> |                             31 May 2018            </div>
+            <div class="post__excerpt"><p id="post-84929-desc">Xero Payroll now makes it easier to set up and manage contractors, process contractor pay, and deduct withholding tax. The improved payroll experience for contractors includes:
+
+a new seamless workflow for setting up contractors where you enter only the required details, including whether they’re GST-registered, and nothing more
+automatic calculation of GST on earnings for GST-registered contractor payments
+automatic update of the GST return once a pay run is posted.</p></div>
+
+        </div>
+    </div>
+</div><div class="col-md-4 col-sm-6 col-xs-12 articleCol clamp_done" id="post-84456" style="">
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/05/global-release-update-april-2018/" title="Xero Global Release Update April 2018"><img src="http://www.xero.com/blog/wp-content/uploads/2018/05/April-Blog-01-1_800x480_acf_cropped.png"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/product/" class="post__category post__category--product">Product</a> </span>                                <span class="text-right">4 shares</span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/05/global-release-update-april-2018/" title="Xero Global Release Update April 2018"> Xero Global Release Update April 2018</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/ann-lisa-niemann/" title="Posts by Ann-Lisa Niemann" rel="author">Ann-Lisa Niemann</a> |                             15 May 2018            </div>
+            <div class="post__excerpt"><p id="post-84456-desc">Check out the latest updates for small businesses and partners, and see what you can expect to drop soon. Remember, any Xero changes and release updates can be found in the Xero Central, or refer to the release timeline for any highlights.</p></div>
+
+        </div>
+    </div>
+</div><div class="col-md-4 col-sm-6 col-xs-12 articleCol clamp_done" id="post-84346" style="">
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/05/get-answer-faster-new-xero-central/" title="Get to your answer faster with new Xero Central"><img src="http://www.xero.com/blog/wp-content/uploads/2018/05/social_images_sd_blog_header_1024_800x480_acf_cropped.png"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/product/" class="post__category post__category--product">Product</a> </span>                                <span class="text-right"></span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/05/get-answer-faster-new-xero-central/" title="Get to your answer faster with new Xero Central"> Get to your answer faster with new Xero Central</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/nigel-piper/" title="Posts by Nigel Piper" rel="author">Nigel Piper</a> |                             14 May 2018            </div>
+            <div class="post__excerpt"><p id="post-84346-desc">We’ve been working hard behind the scenes on some great improvements to our help centre. We know thousands of you check the online help pages every day. So we know that finding a quick answer is super important to getting you back on track with the work you’re doing.</p></div>
+
+        </div>
+    </div>
+</div><div class="col-md-4 col-sm-6 col-xs-12 articleCol clamp_done" id="post-84252" style="">
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/05/xero-mobile-latest-round-ios-android/" title="Xero for Mobile: The latest round-up for iOS and Android"><img src="http://www.xero.com/blog/wp-content/uploads/2018/05/Partner_twitter_800x480_acf_cropped.png"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/product/" class="post__category post__category--product">Product</a> </span>                                <span class="text-right"></span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/05/xero-mobile-latest-round-ios-android/" title="Xero for Mobile: The latest round-up for iOS and Android"> Xero for Mobile: The latest round-up for iOS and Android</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/joel-hanna/" title="Posts by Joel Hanna" rel="author">Joel Hanna</a> |                             9 May 2018            </div>
+            <div class="post__excerpt"><p id="post-84252-desc">It’s about time for another mobile round-up! The mobile team has been hard at work. With that come a number of great releases that make it that much easier to manage your business on the go, from anywhere.</p></div>
+
+        </div>
+    </div>
+</div><div class="col-md-4 col-sm-6 col-xs-12 articleCol clamp_done" id="post-84054" style="">
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/05/xero-projects-simple-way-capture-track-report-jobs/" title="Xero Projects: The Simple Way to Capture, Track and Report on Jobs"><img src="http://www.xero.com/blog/wp-content/uploads/2018/05/projects-blog-1_800x480_acf_cropped_800x480_acf_cropped.png"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/advisors/" class="post__category post__category--advisors">Advisors</a> </span>                                <span class="text-right">1 shares</span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/05/xero-projects-simple-way-capture-track-report-jobs/" title="Xero Projects: The Simple Way to Capture, Track and Report on Jobs"> Xero Projects: The Simple Way to Capture, Track and Report on Jobs</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/herman-man/" title="Posts by Herman Man" rel="author">Herman Man</a> |                             4 May 2018            </div>
+            <div class="post__excerpt"><p id="post-84054-desc">Whether you’re a small business or an advisor working with one, it’s important to know which jobs deliver the best return on investment and which ones need to be reined in.</p></div>
+
+        </div>
+    </div>
+</div><div class="col-md-4 col-sm-6 col-xs-12 articleCol clamp_done" id="post-83953" style="">
+    <div class="post_grid_wrap bottom75 clear ">
+        <div class="pop_small_img post__image-wrap">
+                            <a href="http://www.xero.com/blog/2018/05/banking-fintech-may-2018/" title="What’s happening in banking and fintech in New Zealand – May 2018"><img src="http://www.xero.com/blog/wp-content/uploads/2018/05/DeathtoStock_SlowDown3-1-1_800x480_acf_cropped.jpg"></a>
+                                </div>
+
+        <div class="popular_right_content">
+            <div class="top_share clear">
+                 <span> <a href="http://www.xero.com/blog/category/platform/" class="post__category post__category--platform">Platform</a> </span>                                <span class="text-right"></span>
+            </div>
+
+
+            <h2> <a class="clamp_title" href="http://www.xero.com/blog/2018/05/banking-fintech-may-2018/" title="What’s happening in banking and fintech in New Zealand – May 2018"> What’s happening in banking and fintech in New Zealand – May 2018</a></h2>
+
+            <div class="submit_des">
+                by <a href="http://www.xero.com/blog/author/chris-barton/" title="Posts by Chris Barton" rel="author">Chris Barton</a> |                             1 May 2018            </div>
+            <div class="post__excerpt"><p id="post-83953-desc">It’s important that our customers know how they can save time and money, and improve access to capital. Banks, small business lenders, payment providers and other fintech partners are constantly working on ways to support small businesses.</p></div>
+
+        </div>
+    </div>
+</div></div>
+
+        </div>
+    </div>
+</div>
+<!-- Home page Section 5 ENDS here-->
+
+
+
+
+
+    </div>
+
+</div>
+
+<footer role="contentinfo" id="global-footer" class="global-footer global-footer--dark">
+    <div class="global-footer__container">
+
+        <div class="global-footer__subfooter global-footer__subfooter--normal">
+            <span class="global-footer__subfooter__logo-text">
+                <span class="global-footer__subfooter__logo">
+                    <svg class="logo-xero-blue" viewBox="0 0 45 46" width="45" height="46" xmlns="https://econobilidade.files.wordpress.com/2016/06/econobilidade-e1466430691521.png">
+                        <title>Econobilidade</title>
+
+                    </svg>
+
+                </span>
+                 <span class="global-footer__subfooter__text">Econobilidade </span>
+            </span>
+
+                    </div>
+
+        <div class="global-footer__copyright">
+
+            © 2018 Econobilidade. All rights reserved.            <br class="global-footer__copyright__br">
+
+        </div>
+
+
+
+    </div>
+</footer>
+<!--  Innerwrapper End here-->
+</div>
+<!--  wrapper End here-->
+
+<!--  Page End here-->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5MXLB2"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'TagManagerDataLayer', 'GTM-5MXLB2');</script>
+<!-- End Google Tag Manager -->
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var highlight_and_share = {"show_facebook":"","show_twitter":"1","twitter_username":"xero","mobile":"","content":".has-content-area,.has-excerpt-area","tweet_text":"Tweet","facebook_text":"Share"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/plugins/highlight-and-share/js/highlight-and-share.min.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/components/analytics.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/components/plugin.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/vendor/cookies.js"></script><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_xero_0" name="destination_publishing_iframe_xero_0_name" src="https://xero.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F" style="display: none; width: 0px; height: 0px;" class="aamIframeLoaded"></iframe>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/components/region-changer.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/vendor/velocity.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/vendor/slick.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/vendor/select2.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/vendor/polyfills/matchmedia.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/vendor/polyfills/matchmedia.addlistener.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/components/global-nav.js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","797489237016738");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=797489237016738&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="">(function(b,c,e,f,d){b[d]=b[d]||[];var g=function(){var a={ti:"4009585"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};var a=c.createElement(e);a.src=f;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(g(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=4009585&amp;Ver=2" height="0" width="0" style="display:none; visibility: hidden;"></noscript><meta property="fb:pages" content="119615178068730">
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","164314984145898");fbq("set","agent","tmgoogletagmanager","164314984145898");fbq("track","PageView");</script>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","164314984145898");fbq("set","agent","tmgoogletagmanager","164314984145898");fbq("track","PageView");</script>
+
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/scripts.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/applib.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/blog-js/slider.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/blog-js/StackBlur.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/blog-js/clamp.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/blog-js/custom.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/themes/theme-2016-4/library/js/blog-js/post-rearrange-js.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-includes/js/comment-reply.min.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-includes/js/wp-embed.min.js"></script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/plugins/akismet/_inc/form.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var alm_localize = {"ajaxurl":"https:\/\/www.xero.com\/blog\/wp-admin\/admin-ajax.php","alm_nonce":"6e4c8649d1","pluginurl":"https:\/\/www.xero.com\/blog\/wp-content\/plugins\/ajax-load-more","scrolltop":"false","ajax_object":{"is_single":true,"is_singular":true}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.xero.com/blog/wp-content/plugins/ajax-load-more/core/js/ajax-load-more.min.js"></script>
+
+
+
+
+
+
+<div class="has_tweet_template" style="display: none;"><a href="https://twitter.com/intent/tweet?via=%username%&amp;url=%url%&amp;text=%text%" target="_blank"><i class="fa fa-twitter"></i>&nbsp;Tweet</a></div><script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:11035,hjsv:5};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"//static.hotjar.com/c/hotjar-",".js?sv\x3d");</script>
+<div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.11485928441312909"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.811921657141988" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=4009585&amp;Ver=2&amp;mid=bc0a3d9a-bb63-f47a-12fc-7faec05a9694&amp;evt=pageLoad&amp;sid=c1d61364-1&amp;lt=2223&amp;pi=1200101525&amp;lg=pt-BR&amp;sw=1440&amp;sh=900&amp;sc=24&amp;tl=Statement%20of%20Cash%20Flows%20for%20business%20%7C%20Xero%20Blog&amp;p=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F&amp;r=&amp;msclkid=N&amp;rn=570588"></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" src="https://vars.hotjar.com/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html"></iframe><div id="ads"></div><script src="https://px.ads.linkedin.com/collect/?time=1530036221295&amp;pid=206915&amp;url=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F&amp;pageUrl=https%3A%2F%2Fwww.xero.com%2Fblog%2F2015%2F12%2Fstatement-of-cash-flows-is-the-key-to-understanding-the-health-of-your-business%2F&amp;ref=&amp;fmt=js&amp;s=1" type="text/javascript"></script><script type="text/javascript" id="">if(window.xeroAdobeTargetEvents&&0<window.xeroAdobeTargetEvents.length)for(var xatc=0;xatc<window.xeroAdobeTargetEvents.length;xatc++)window.xeroAdobeTargetEvents[xatc]();</script></body></html>

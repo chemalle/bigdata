@@ -1,0 +1,52 @@
+{% extends 'posts/cash_flow.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<body>
+
+<br>
+<br>
+<div class="container">
+
+
+
+<div class="newsletter-form__email-submit">
+
+
+
+{% if form.errors %}
+    <p style="color: red;">
+        Please correct the error{{ form.errors|pluralize }} below.
+    </p>
+{% endif %}
+
+
+<form action="" enctype="multipart/form-data"  method="post">
+    <table>
+        {{ form.as_table }}
+    </table>
+    {% csrf_token %}
+  <button Input align="left"    class="newsletter-form__submit"  type="submit" value="Submit">
+          <span   class="newsletter-form__submit__text">
+
+                                Analisar agora!
+                              </span>
+      </button>
+</form>
+
+
+
+
+
+  {% endblock %}
+</div>
+
+</div>
+
+</body>
+
+
+</html>
